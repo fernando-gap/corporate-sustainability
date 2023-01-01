@@ -1,0 +1,102 @@
+:root {
+  background-color: #F5F5F5;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  font-family: "Montserrat", Helvetica, sans-serif, monospace;
+}
+* {
+  margin: 0;
+}
+/* adjust text elements */
+h2 {
+  font-size: 1.4rem;
+}
+p, h2 {
+  margin-top: 1cm;
+}
+/* navigation header */
+nav {
+  height: 80px;
+  background: #2e2e2e;
+  box-shadow: 4px 4px 6px var(--shadow-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+nav div a {
+  padding: 20px;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+nav > div {
+  margin-right: 125px;
+}
+.logo {
+  margin-right: auto;
+  padding: 50px;
+}
+/* frames are all centered */
+.frame {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  /*flex-direction: column;*/
+}
+/* side bar */
+.sidebar {
+  width: 350px;
+  height: 100%;
+  color: white;
+  background: rgba(46, 46, 46, 0.8);
+  box-shadow: 5px 2px 12px var(--shadow-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position:fixed;
+  top: 0;
+}
+
+
+/* text content */
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  margin-left: 350px;
+}
+/* mainly titles */
+#menu-title {
+  padding: 125px 0 40px 0;
+}
+#content-title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 50px 0 75px 0;
+}
+/* adjust text contents */
+section {
+  font-size: 1.2rem;
+  line-height: 1cm;
+  text-align: justify;
+}
+/* sidebar */
+#toc {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+#toc li {
+  padding: 10px;
+}
+#toc li a {
+  text-decoration: none;
+  color: white;
+}
+#toc li a:hover {
+  text-decoration: none;
+  color: lime;
+}
